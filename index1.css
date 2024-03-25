@@ -1,0 +1,36 @@
+.container{
+    width: 400px;
+    background-color: #ed9eae;
+    padding: 1px;
+}
+
+.list{
+    padding: 0px;
+    color: #fff;
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+.list_item::before{
+    margin: 5px;
+    content: counter(my-counter)".";
+    counter-increment: my-counter;
+}
+.container_list{
+    margin: 18px 18px;
+}
+
+.list_item{
+    display: flex;
+    background-color: #c66377;
+    height: 25px;
+    margin-bottom: 8px; 
+}
+
+.list_item-span{
+    height: 25px;
+    align-items: center;
+    display: flex;
+    background-color: #9e354a;
+    padding: 0 20px;
+}
